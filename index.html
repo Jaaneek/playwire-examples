@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-SWK55HVZFR"
+    ></script>
+    <script>
+      window._pwGA4PageviewId = "".concat(Date.now());
+      window.dataLayer = window.dataLayer || [];
+      window.gtag =
+        window.gtag ||
+        function () {
+          dataLayer.push(arguments);
+        };
+      gtag("js", new Date());
+      gtag("config", "G-SWK55HVZFR", { send_page_view: false });
+      gtag("event", "ramp_js", {
+        send_to: "G-SWK55HVZFR",
+        pageview_id: window._pwGA4PageviewId,
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
