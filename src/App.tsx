@@ -8,12 +8,15 @@ function App() {
   return (
     <div className="App">
       {" "}
-      <PlaywireContainer></PlaywireContainer>
+      <PlaywireContainer enableTrendiVideo></PlaywireContainer>
       <div>
         <AdvertisementDisplay>
           <AdUnit type="leaderboard-bottom" />
         </AdvertisementDisplay>
         <AdvertisementSticky />
+        <div className="pw-in-article-video-container">
+          <div className="pw-in-article-video"></div>
+        </div>
       </div>
     </div>
   );
